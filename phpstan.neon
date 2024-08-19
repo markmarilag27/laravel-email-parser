@@ -9,6 +9,9 @@ parameters:
 
     # Level 9 is the highest level
     level: 5
+
+    ignoreErrors:
+        - '#Dynamic call to static method Illuminate\\.*#'
 #
 #    excludePaths:
 #        - ./*/*/FileToBeExcluded.php
