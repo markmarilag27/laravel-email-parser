@@ -1,0 +1,267 @@
+Received: from NAM12-MW2-obe.outbound.protection.outlook.com (mxd [40.107.244.102]) by mx.sendgrid.net with ESMTP id wEZd1drhT1W3-aOH5U8Z-A for <123@analyze.inflektion.ai>; Wed, 28 Feb 2024 00:36:04.544 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=BXN1AiyLpG2X5pYELiRgVcQvgTeSP2S1H+qcHkJAoDAX/Ht5Pt5flgpEFYfGbZBvTLYdxNJ7nbyfXGigS+9IoJRydmeID8bJE5oHnIx5MDYD141ZywDPRAHMGDSFDXA8LXQ2j4XpCCkIWZaXEpJGLlcGsDu+O2ybEGq6kSdg0S7D5hi8+8B7v7y8hBdMqmwCQ5bbokjKqqCDSZyXAWNq+X5EK34C+IqMWIatDnLcOOGR2hM5Gp5GFBY8oYhk0ukFt0hmzm0tkNDYjD6vKcsJvyqZ1tAGIn8b8uLLq+3VHm8e6fYjCddemP4376pwQv1GpsZVHJiSe0j9Tcq37BFRuA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=b/KYwclSNeQj5ZcPfgtLZodGIBJ5Mwx3aoNn5p7Hy8k=;
+ b=JgBMdtw3czy/gZmsvWXPoD54fiMiM0qkR6gcDsWBSb6K19XMyYknyjvq31MmU9uf03ciOzH41ayrgSmS2hFebId7mp6iz8cqf2lm13x75rV7EOkTsZnlcr+l2Pj5S77lVsLXfNiw3oPww7SIvGYTzNSCbYZ958KJu6DZXqbtRZBCap4IQmci/flXgifPMphr4wR3hqwrX4XpmzGOlliwCcSKiWijXqT0FHYMSFTkapK6n6U//TEsygxM0qVJa1p+C+e+L8Mz1qBhtUPNvNltE3YUgbiCkEWkhz0ulh/Vptv1LL+MLUzK/uVef1SvAgp2alD7Zfr3cAzeYKHHdplZOg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=haafiz.com; dmarc=pass action=none header.from=haafiz.com;
+ dkim=pass header.d=haafiz.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=haafiz.onmicrosoft.com; s=selector2-haafiz-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=b/KYwclSNeQj5ZcPfgtLZodGIBJ5Mwx3aoNn5p7Hy8k=;
+ b=OGk+ypFz01gGIFmHOr3nF8jfF6E6+vu1Re7kLs5O9qr6YbEzMaYXSGtYxjKlGUIV/nhM+rPRpKhDGwx4W9TF4apuoyN/05D4mjiGou+YkAl1jt3TtjO3hf7we+5kbMu8S7CyehfQVLyKCbzmF4cBvPTEfVKaOsWIS4B7xT9JOi8=
+Received: from SJ2PR22MB5190.namprd22.prod.outlook.com (2603:10b6:a03:593::5)
+ by SA0PR22MB2256.namprd22.prod.outlook.com (2603:10b6:806:80::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7316.39; Wed, 28 Feb
+ 2024 00:36:01 +0000
+Received: from SJ2PR22MB5190.namprd22.prod.outlook.com
+ ([fe80::6e12:3608:9a28:ceb7]) by SJ2PR22MB5190.namprd22.prod.outlook.com
+ ([fe80::6e12:3608:9a28:ceb7%5]) with mapi id 15.20.7316.035; Wed, 28 Feb 2024
+ 00:36:00 +0000
+From: Haafiz Dossa <haafiz@haafiz.com>
+To: "123@analyze.inflektion.ai" <123@analyze.inflektion.ai>
+Subject: RE: hello world
+Thread-Topic: hello world
+Thread-Index: Adpp25wOccQ6slvEQbaIAYwG0b54EgAAK44QAABB2sAAABF3kAAAIAyA
+Date: Wed, 28 Feb 2024 00:36:00 +0000
+Message-ID:
+ <SJ2PR22MB5190043A79B6D38B8E870461B5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+References:
+ <SJ2PR22MB519075E71D2B442DD4F44FFEB5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+ <SJ2PR22MB5190A5E715D69EC2326C4A5FB5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+ <SJ2PR22MB51903A73ED6D237C3BF6A83AB5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+ <SJ2PR22MB519088A81B7C768C4864D9D2B5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+In-Reply-To:
+ <SJ2PR22MB519088A81B7C768C4864D9D2B5582@SJ2PR22MB5190.namprd22.prod.outlook.com>
+Accept-Language: en-CA, en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=haafiz.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ2PR22MB5190:EE_|SA0PR22MB2256:EE_
+x-ms-office365-filtering-correlation-id: f1c3609b-a5a4-4341-fc9e-08dc37f53cdc
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ S+pwnOJfAqIySBppH9qYmfWGA3r//mCy8pEr/Z1TgMkZrA/Cr4G2YHunBua14mp2lBvcGDDW8SDZuZZ8GIfbA2AE66R2+l3jZ8f4GjK0c7jLkES2sDE1c+ygjU8mtEDjk280KMNuaTrCjwwPBYKW+V14E0jy42Imyu5xKcsuMKCAO9PQGGTWArgWsQg3jJNhya8hIE+D1ihqQTtc0sv5DyoFqxMkqAWevzoEKn5kPdfxb541GmmJOZh01apgGALIROt8cVx/QbZ1rvdk8onYEgSRtss8EKapBD7vp9hAQuaJXEp7q93BQHuA2ZqNvWfzqxqIx9yUet9Vq8gOtoYyW/FuiEI8xSqwZzYtd1F85mgLomVc7aODoxw9IbIxIXDr9+Yco0OEiQMJPDSWw+DADoGBkYHpNAZwJ/I5NFZo3hqmF/2ktQPgzDUijPgB/htQCI+sHTDkgAXK0n5VaYt10+RBI5Kb/gURwA7yC9EUn3IKuYx2xYOq3PCsNoIKBILclbLRqzvjBf6JWOBAMeh9N/HegvkeAIkcUJ0FhPVvY9xzD8JzYlUqmQ/s9hMyaznFcUte3JGO2PpVpDRwLoVWIEGQsiBV5UyNg1+1eFAp6B8kJf72iqoMaSl+zdOTqHWP88S1GaKzdFKR7lrHXruP1KxbOco0r2MlslsHwKk0lZJ3Mn8mlcDzH5kvpqLYotB4ZkL3rJANWVa10993c3ozIAfGFW9AWEPtnDblknz+SA0=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ2PR22MB5190.namprd22.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(38070700009);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?ROgLUxp72yZzbTbVeX+eadiZB/rQxjVol7FczNRCav8S8bcxh//W19MEm7fY?=
+ =?us-ascii?Q?1VxEZeI+agsE7R/YbiOOeIjzdAhgJx/V8taiq+mZsxe8F/TIg+aXzIBLO+bj?=
+ =?us-ascii?Q?QnU848lt02TaGgdCB5+cCJDW7daS7hi3SoqeGNFCJWFgDiLfGNwRYILTuojO?=
+ =?us-ascii?Q?u7Q2PtZDIPsiK+xbHCmBn7TsJWhp2xBdvBS4P3Pa6PgCViLFT60f5L6mlx6p?=
+ =?us-ascii?Q?roZFi2HaThJNDHcE0mG6IOKZtv6yLBztAy/ONVqFcHpElvILf//QeyF+C1Ny?=
+ =?us-ascii?Q?2+PfVwHwrkwoZojXC9kY/lsOPVilUPJ9lvkbnK7/QFG+qvNhrrKRuiNrqOrt?=
+ =?us-ascii?Q?AQt+AjC5I3uLEP2AlV8AnIqBsJkcAULFSs7Up+TKgLazgcm1u9q0toGPcSSp?=
+ =?us-ascii?Q?7B+f+RzO3R3HVhlv2aUyPgt/Izch0nXjNAVohb1oehmSvcfdURlJZLwRx/dz?=
+ =?us-ascii?Q?m4Vng0v7xUB8oPqMJCDh1fVVo9wKfAfppnYVCC/UY9Ut/AOEQwd3tK07quq4?=
+ =?us-ascii?Q?43XMaRQLdz2PWdQ+HVPDnefBblJAmpVuV9qbQdvVJDNTxyOPQsbO9aqdtfyH?=
+ =?us-ascii?Q?/EtRwQf9kgG6025hYfLLCGUJTyqUvCbOHtxaC6IKuCmcaLl0Z9AZQfxNUgYR?=
+ =?us-ascii?Q?rGsFqiJw1RNKknUcqIjCRZrHQX26Fs4wuIPcIRyf93Gt3IMHiUZpW7HjlJQ1?=
+ =?us-ascii?Q?kCszr8f3WEHabb9qwEEqTPwKJLKgRIPaw44ewzUSJiGkT6LEQL+EGGBt6zh9?=
+ =?us-ascii?Q?5oF3Ksy0CHPemjysjk+4DiLbhopN8SNlEt0hwOvfQMuRx4kq8KvmCISGuuha?=
+ =?us-ascii?Q?u3NrL+yeuqguTHICZjUTI7Np7VIzemux3N7UJ8v14z0Eon+RvdxzSFxS+I0k?=
+ =?us-ascii?Q?TiujPQnZ6yC/khvf+Ok2EKKVfoqiKejjvI3SHKSzA+9Aedg/RcuxofSkVX9A?=
+ =?us-ascii?Q?vPFr/nos/0CPxkgPz8zuU/ZwCgdEaWNF/onYgVuvUaOFFqhZ6MZb6p1/R5xf?=
+ =?us-ascii?Q?URi8uC/Kn9IzWAHa7dQzqo3JDxRgBZOKlbegnRinS/Oc20jdmzD01d+33iaK?=
+ =?us-ascii?Q?XYzLu3moKap/yG9R25U4FmLQfJzv0jO5QEz1aRkHoPXGVJH7dYZ/u/QIoYoJ?=
+ =?us-ascii?Q?ARcqBvWfaTjaG7rli7O1YUyzcyh0kWIhKjgWqtLMwxf3dWDmehLn0k5lOeJH?=
+ =?us-ascii?Q?BELrStbY9355A6Sb/VV7Fgh55I4Q2je1yqM4BC2xSxvMZb6SD8LBH8OMsmvg?=
+ =?us-ascii?Q?oE/7HM8EJsbBhL9j5O8pl1JNiZd3mFcw1W/azocXjNloE3x/v6pBb2OUnbIc?=
+ =?us-ascii?Q?qHk/9TRewxkW3SS+9y2LvDaQYdICaJPYb69PsfFW/WsFScnrL1bshQ/dC0rt?=
+ =?us-ascii?Q?Ezn41cHeibAyhdKyV022HsH718Dh4rwQM9hbbh+QyqCkgjX/Ew2SUTAWGDmB?=
+ =?us-ascii?Q?rj2oRPIBHXtDthDitvbPOHWhw4cul28/GuJgvLD04cWLA+Wbo5IHpNPZuJWf?=
+ =?us-ascii?Q?rkeCvJ6Fsr6taeYrGVtz25MQRUJyCYyu//baxcO1WJxUK2T1AYMNHuRcoaj2?=
+ =?us-ascii?Q?F9qkWetKQ42JKImXoto=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ2PR22MB5190043A79B6D38B8E870461B5582SJ2PR22MB5190namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: haafiz.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ2PR22MB5190.namprd22.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: f1c3609b-a5a4-4341-fc9e-08dc37f53cdc
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Feb 2024 00:36:00.6880
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 79890496-a591-4aee-bd98-4b18e1398c4a
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 3XkOag6CSF8DeVOd6S28OgfoT7h9Uih09PPc1HECur6ghiWoWPtpGYbnv0ViqSCWc7oiogT5gaM3YR4VSJm+tw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA0PR22MB2256
+
+--_000_SJ2PR22MB5190043A79B6D38B8E870461B5582SJ2PR22MB5190namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Beginners luck
+
+From: Haafiz Dossa
+Sent: Tuesday, February 27, 2024 4:32 PM
+To: 123@analyze.inflektion.ai
+Subject: RE: hello world
+
+again
+
+From: Haafiz Dossa
+Sent: Tuesday, February 27, 2024 4:30 PM
+To: 123@analyze.inflektion.ai<mailto:123@analyze.inflektion.ai>
+Subject: RE: hello world
+
+again
+
+From: Haafiz Dossa
+Sent: Tuesday, February 27, 2024 4:23 PM
+To: 123@analyze.inflektion.ai<mailto:123@analyze.inflektion.ai>
+Subject: RE: hello world
+
+test
+
+From: Haafiz Dossa
+Sent: Tuesday, February 27, 2024 4:18 PM
+To: 123@analyze.inflektion.ai<mailto:123@analyze.inflektion.ai>
+Subject: hello world
+
+Hello world 123
+This is a test
+
+--_000_SJ2PR22MB5190043A79B6D38B8E870461B5582SJ2PR22MB5190namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-CA" link=3D"#467886" vlink=3D"#96607D" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Beginners luck<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:EN-CA">From=
+:</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri&quot;,s=
+ans-serif;mso-ligatures:none;mso-fareast-language:EN-CA"> Haafiz
+ Dossa <br>
+<b>Sent:</b> Tuesday, February 27, 2024 4:32 PM<br>
+<b>To:</b> 123@analyze.inflektion.ai<br>
+<b>Subject:</b> RE: hello world<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">again<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:EN-CA">From=
+:</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri&quot;,s=
+ans-serif;mso-ligatures:none;mso-fareast-language:EN-CA"> Haafiz
+ Dossa <br>
+<b>Sent:</b> Tuesday, February 27, 2024 4:30 PM<br>
+<b>To:</b> <a href=3D"mailto:123@analyze.inflektion.ai">123@analyze.inflekt=
+ion.ai</a><br>
+<b>Subject:</b> RE: hello world<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">again<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:EN-CA">From=
+:</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri&quot;,s=
+ans-serif;mso-ligatures:none;mso-fareast-language:EN-CA"> Haafiz
+ Dossa <br>
+<b>Sent:</b> Tuesday, February 27, 2024 4:23 PM<br>
+<b>To:</b> <a href=3D"mailto:123@analyze.inflektion.ai">123@analyze.inflekt=
+ion.ai</a><br>
+<b>Subject:</b> RE: hello world<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">test<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri&quot;,sans-serif;mso-ligatures:none;mso-fareast-language:EN-CA">From=
+:</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri&quot;,s=
+ans-serif;mso-ligatures:none;mso-fareast-language:EN-CA"> Haafiz
+ Dossa <br>
+<b>Sent:</b> Tuesday, February 27, 2024 4:18 PM<br>
+<b>To:</b> <a href=3D"mailto:123@analyze.inflektion.ai">123@analyze.inflekt=
+ion.ai</a><br>
+<b>Subject:</b> hello world<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">Hello world 123<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US">This is a test<o:p></o:p></span=
+></p>
+</div>
+</body>
+</html>
+
+--_000_SJ2PR22MB5190043A79B6D38B8E870461B5582SJ2PR22MB5190namp_--
