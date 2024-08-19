@@ -43,6 +43,23 @@ services:
         networks:
             - default
 
+    # Test Database
+    mysql-test:
+        image: mysql:8.0
+        container_name: mysql-test
+        restart: unless-stopped
+        ports:
+            - 3307:3306
+        environment:
+            MYSQL_DATABASE: laravel
+            MYSQL_USER: laravel
+            MYSQL_PASSWORD: laravel
+            MYSQL_ROOT_PASSWORD: laravel
+        volumes:
+            - mysql-test-data:/var/lib/mysql/
+        networks:
+            - default
+
     # Redis
     redis:
         image: redis:alpine
@@ -62,6 +79,8 @@ networks:
 # Volumes
 volumes:
     mysql-data:
+        driver: local
+    mysql-test-data:
         driver: local
     redis-data:
         driver: local

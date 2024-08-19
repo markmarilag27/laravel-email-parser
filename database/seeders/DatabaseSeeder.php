@@ -15,14 +15,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
         $successfulEmailSQL = base_path('database/seeders/record.sql');
 
-        if (File::exists($successfulEmailSQL)) {
+        if (DB::table('users')->count() === 0) {
+            User::factory()->create([
+                'name' => 'Test User',
+                'email' => 'test@example.com',
+            ]);
+        }
+
+        if (File::exists($successfulEmailSQL) && DB::table('successful_emails')->count() === 0) {
             DB::unprepared(file_get_contents($successfulEmailSQL));
         }
     }
