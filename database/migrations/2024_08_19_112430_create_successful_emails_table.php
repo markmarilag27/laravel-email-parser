@@ -11,6 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
+        if (Schema::hasTable('successful_emails')) {
+            return;
+        }
+
         Schema::create('successful_emails', function (Blueprint $table) {
             $table->id();
             $table->mediumInteger('affiliate_id')->index();
