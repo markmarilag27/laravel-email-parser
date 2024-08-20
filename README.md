@@ -68,3 +68,105 @@ Run this script before commit
 ```
 $ bash ./run-before-commit.sh
 ```
+### Seed the data
+Inside the container
+```
+$ php artisan db:seed
+```
+
+### API Endpoints
+You can access API endpoints for authentication, successful emails
+
+##### Login
+To get access token
+```
+URL: domain/api/auth/login
+METHOD: POST
+JSON: {
+    "email": "test@example.com",
+    "password": "password"
+}
+```
+##### Logout
+To get access token
+```
+URL: domain/api/auth/logout
+METHOD: POST
+Authorization: Bearer XXXX
+```
+##### Get All records
+By default it will give you latest collection of data limited to 10
+```
+URL: domain/api/successful-emails
+METHOD: GET
+Authorization: Bearer XXXX
+```
+Available parameters:
+- paginate: to get the record in pagination
+- page: (only if paginate)
+- limit: 10 (default) to increase the record display
+
+##### Store
+Create new record on `successful_emails`
+```
+URL: domain/api/successful-emails
+METHOD: POST
+Authorization: Bearer XXXX
+JSON: {
+    "affiliate_id": 1 // required|integer,
+    "envelope": "text" // required|string,
+    "from": "text" // required|string|max 255 characters,
+    "subject": "text" // required|string,
+    "dkim": null // null|string,
+    "SPF": "text" // required|string|max 255 characters,
+    "spam_score": null // null|numeric,
+    "email": "long text" // required|string,
+    "raw_text": null // null|string (If not provided it will be filled base on email),
+    "sender_ip": "127.0.0.1" // required|string|max 50 characters,
+    "to": "target" // required|string
+}
+```
+##### Show
+Display the record information
+```
+URL: domain/api/successful-emails/{successfulEmailId}
+METHOD: GET
+Authorization: Bearer XXXX
+```
+##### Update
+Update the record information
+```
+URL: domain/api/successful-emails/{successfulEmailId}
+METHOD: PUT
+Authorization: Bearer XXXX
+JSON: {
+    "affiliate_id": 1 // required|integer,
+    "envelope": "text" // required|string,
+    "from": "text" // required|string|max 255 characters,
+    "subject": "text" // required|string,
+    "dkim": null // null|string,
+    "SPF": "text" // required|string|max 255 characters,
+    "spam_score": null // null|numeric,
+    "email": "long text" // required|string,
+    "raw_text": null // null|string (If not provided it will be filled base on email),
+    "sender_ip": "127.0.0.1" // required|string|max 50 characters,
+    "to": "target" // required|string
+}
+```
+##### Soft Delete
+Soft delete the selected record
+```
+URL: domain/api/successful-emails/{successfulEmailId}
+METHOD: DELETE
+Authorization: Bearer XXXX
+```
+#### Scheduler
+Run base on the set schedule
+`php artisan schedule:work`
+
+To display the list run the command below:
+`php artisan schedule:list`
+
+##### GetUnprocessedSuccessfulEmailJob
+Run every: Hour
+Description: It updates the `successful_emails.raw_text` base on the value of `successful_emails.email`
