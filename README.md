@@ -55,7 +55,7 @@ Run to build the app container
 ```
 $ docker compose build app
 ```
-Run to boot up development, create minio bucket, dynamodb table and composer install and etc.
+Run to boot up development, composer install and etc.
 ```
 $ bash ./run-start.sh
 ```

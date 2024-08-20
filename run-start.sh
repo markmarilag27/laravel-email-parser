@@ -2,7 +2,6 @@
 
 artisan="
 composer install
-composer update --prefer-stable
 php artisan migrate
 "
 
