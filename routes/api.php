@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
  * Auth routes
  ***********************************
  */
-Route::name('auth.')->prefix('auth')->group(function () {
+Route::prefix('auth')->group(function () {
     // Login
     Route::post('login', LoginController::class)->name('login')->middleware(Guest::class);
     // Logout
